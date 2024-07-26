@@ -11,6 +11,9 @@ struct HelpCommand: Command {
     func run() -> Result {
         let helpMessage = """
         USAGE: RIBsTreeMaker <analyze target path> [options]
+        
+        Arguments:
+          <analyze target path>  Specify one or more paths separated by commas.
 
         Options:
           --under <value>      The tree will be displayed only under the RIB.
