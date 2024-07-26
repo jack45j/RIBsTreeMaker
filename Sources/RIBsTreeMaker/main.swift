@@ -38,7 +38,7 @@ func makeCommand(commandLineArguments: [String]) -> Command {
     case "version":
         return VersionCommand(version: version)
     default:
-        let paths = allSwiftSourcePaths(directoryPath: firstArgument)
+        let paths = firstArgument.split(separator: ",").flatMap { allSwiftSourcePaths(directoryPath: String($0)) }
         let rootRIBName = arguments["under"] ?? "Root"
         let shouldShowSummary = arguments["summary"] != nil
         let formatType = FormatType(value: arguments["format"])
