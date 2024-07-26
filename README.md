@@ -10,7 +10,7 @@ RIBsTreeMaker visualize [RIBs](https://github.com/uber/RIBs) business logic tree
 
 ## Usage
 ```
-swift run RIBsTreeMaker [path/to/iOSproject] --under [RIB name] [--format [plantUML or markdown (default: plantUML)]] [--summary] [--exclude [RIB name]]
+swift run RIBsTreeMaker [path1/to/iOSproject,path2/to/be/analyzed] --under [RIB name] [--format [plantUML or markdown (default: plantUML)]] [--summary] [--exclude [RIB name]]
 ```
 
 ### Options
